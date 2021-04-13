@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomePage</title>
+  <link rel="stylesheet" href="../styles/resets.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/homepage.css" />
+  <link rel="stylesheet" href="../styles/footer.css" />
+  <script defer src="https://kit.fontawesome.com/e856a66464.js" crossorigin="anonymous"></script>
+  <script defer src="../scripts/currentDate.js"></script>
+  <script defer src="../scripts/homepage.js"></script>
+  <script defer src="../scripts/header.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navigation">
+      <div class="logo">NodeBlog</div>
+      <ul>
+        <li class="logout-avatar-home"><a class="nav-a" href="./main.html">Explore</a></li>
+        <li><a class="nav-a" href="./our-story.html">Our Story</a></li>
+        <li><a class="nav-a" href="./trending.html">Trending</a></li>
+        <li class="loginAndGetStarted"><a class="nav-a" id="log-in" href="./login.html">Log In</a></li>
+        <li class="loginAndGetStarted">
+          <a class="nav-a" id="get-started" href="../pages/resigtration.html">Get Started</a>
+        </li>
+        <li class="logoutAndAvatar"><a class="nav-a logout">Log Out</a></li>
+        <li class="logoutAndAvatar">
+          <img id="header-avatar" src="../assets/blank-profile.png" class="img-conteiner" alt="avatarImg" />
+        </li>
+      </ul>
+    </nav>
+    <div class="homepage-links">
+      <p class="welcomeMessage">Hello, <span id="helloUsername"></span></p>
+      <ul class="links-ul">
+        <li><a class="home-links-a" href="#my-story"><i class="fas fa-book-open"></i>&nbsp; My stories </a></li>
+        <!-- <li><a class="home-links-a" href="#"><i class="fas fa-user-friends"></i>&nbsp; Following </a></li> -->
+        <!-- <li><a class="home-links-a" href="#"><i class="far fa-newspaper"></i>&nbsp; Explore </a></li> -->
+        <li>
+          <a class="home-links-a" id="edit-authorInfo" href="#"><i class="fas fa-user-edit"></i>&nbsp; Edit profile </a>
+        </li>
+        <li><a id="delete-account" class="home-links-a" href="#"><i class="fas fa-user-slash"></i>&nbsp; Delete account
+          </a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="write-publication">
+      <h2>Tell us your story...</h2>
+      <form class="publication-form" action="#">
+        <label class="pub-label" for="title">Publication title:</label>
+        <input type="text" name="title" id="title" required />
+        <textarea required class="publication" rows="10" cols="80" placeholder="Write your story here"></textarea>
+        <div class="file-wrapper">
+          <label class="pub-file" for="pub-file">Choose image</label>
+          <input name="pub-file" id="pub-file" type="file" />
+        </div>
+        <input type="submit" id="pub-submit" value="Publish!" />
+      </form>
+    </section>
+    <div id="authorModal" class="modal">
+      <div class="modalContent">
+        <div class="modal-close">
+          <span class="modal-close__span">&times;</span>
+        </div>
+        <div class="modalContent__authorInfo">
+          <div class="heading-aboutYou">
+            <h1>About you</h1>
+          </div>
+          <div class="name-surname">
+            <div class="name-surname-inputs">
+              <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" readonly />
+              </div>
+              <div>
+                <label for="surname">Surname</label>
+                <input type="text" name="name" id="surname" readonly />
+              </div>
+            </div>
+            <div class="edit-save-buttons">
+              <button class="editBtn editBtn1">Edit</button>
+              <button class="saveBtn saveBtn1">Save</button>
+            </div>
+          </div>
+          <div class="bio">
+            <div class="bio-text">
+              <label for="bio">Bio</label>
+              <textarea id="bio" rows="4" cols="40" readonly></textarea>
+            </div>
+            <div class="edit-save-buttons">
+              <button class="editBtn editBtn2">Edit</button>
+              <button class="saveBtn saveBtn2">Save</button>
+            </div>
+          </div>
+          <div class="photo">
+            <div class="photo-lable-container">
+              <p class="photo-label">Photo</p>
+              <p>Click on photo to edit</p>
+            </div>
+            <div id="uploadedAvatarPlace">
+              <img class="profile-img" id="avatar-upload" src="../assets/blank-profile.png" alt="avatarImg" />
+            </div>
+            <input id="profile-img-input" type="file" />
+            <p class="error-message"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="my-story" class="my-publications">
+    </section>
+  </main>
+  <footer>
+    <div>
+      <p id="copyrigts">
+        <span id="current-year"></span> © Visos teisės saugomos
+      </p>
+    </div>
+    <div>
+      <p class="names">
+        Karina Garifovaitė, Erika Butrimanskienė, Evelina Poniatajeva
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

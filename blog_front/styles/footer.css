@@ -1,0 +1,19 @@
+footer {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px 6px #f5f3f4;
+    color: var(--text-color);
+}
+
+#copyrigts {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--accent-color);
+    font-size: 12px;
+}
+
+.names {
+    padding-top: 10px;
+    font-size: 10px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registracija</title>
+  <link rel="stylesheet" href="../styles/resets.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/registration.css" />
+  <link rel="stylesheet" href="../styles/footer.css">
+  <script defer src="../scripts/currentDate.js"></script>
+  <script defer src="../scripts/registration.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navigation">
+      <div class="logo">NodeBlog</div>
+      <ul>
+        <li><a class="nav-a" href="./main.html">Explore</a></li>
+        <li><a class="nav-a" href="./our-story.html">Our story</a></li>
+        <li><a class="nav-a" href="./trending.html">Trending</a></li>
+        <li><a class="nav-a" id="log-in" href="./login.html">Log In</a></li>
+        <li>
+          <a class="nav-a" id="get-started" href="./resigtration.html">Get Started</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h3>Join Us!</h3>
+    <h4>Only few steps left:</h4>
+    <form action="#">
+      <label for="username">* Username:</label>
+      <input id="username" type="text" />
+      <label for="name">* Your name:</label>
+      <input id="name" type="text" />
+      <label for="surname">* Your surname:</label>
+      <input id="surname" type="text" />
+      <label for="email">* Email adress:</label>
+      <input id="email" type="email" />
+      <label for="password">* Password:</label>
+      <input id="password" type="password" />
+      <p class="required">* Required fields</p>
+      <p class="message"></p>
+      <input id="submit" type="submit" value="Let's get started!" />
+    </form>
+
+    <p class="have-account">Already have an account?</p>
+    <a class="login" href="./login.html">Log in!</a>
+  </main>
+  <footer>
+    <div>
+      <p id="copyrigts">
+        <span id="current-year"></span> © Visos teisės saugomos
+      </p>
+    </div>
+    <div>
+      <p class="names">Karina Garifovaitė, Erika Butrimanskienė, Evelina Poniatajeva </p>
+    </div>
+  </footer>
+</body>
+
+</html>

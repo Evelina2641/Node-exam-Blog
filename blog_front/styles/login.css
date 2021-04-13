@@ -1,0 +1,108 @@
+main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-a {
+  font-size: 12px;
+
+}
+
+h3 {
+  margin: 20px 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: var(--text-color);
+}
+
+form {
+  margin-top: 40px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: var(--text-color);
+}
+
+form input {
+  border: none;
+  border-bottom: 1px solid var(--accent-color);
+  font-size: 1em;
+}
+
+form input:focus {
+  outline: none;
+}
+
+.message {
+  font-size: 12px;
+  margin-top: 10px;
+  color: red;
+}
+
+.border-red {
+  border: 1px solid red;
+}
+
+#submit {
+  align-self: center;
+  padding: 15px;
+  width: 50%;
+  margin: 40px 0;
+  border: none;
+  background: var(--accent-color);
+  color: var(--light-color);
+  font-size: 0.7em;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+#submit:hover {
+  cursor: pointer;
+  border: 1px solid var(--accent-color);
+  background: transparent;
+  color: var(--accent-color);
+}
+
+.dont-have-account {
+  margin: 20px 0;
+  color: var(--text-color);
+}
+
+.signup {
+  margin: 0 0 20px 0;
+  padding-bottom: 10px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.signup:hover {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    width: 50%;
+  }
+
+  .nav-a {
+    font-size: 15px;
+
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  form {
+    width: 30%;
+  }
+}

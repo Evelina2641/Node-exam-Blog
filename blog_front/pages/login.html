@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="../styles/resets.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/login.css" />
+  <link rel="stylesheet" href="../styles/footer.css">
+  <script defer src="../scripts/currentDate.js"></script>
+  <script defer src="../scripts/login.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navigation">
+      <div class="logo">NodeBlog</div>
+      <ul>
+        <li><a class="nav-a" href="./main.html">Explore</a></li>
+        <li><a class="nav-a" href="./our-story.html">Our Story</a></li>
+        <li><a class="nav-a" href="./trending.html">Trending</a></li>
+        <li>
+          <a class="nav-a" id="get-started" href="../pages/resigtration.html">Get Started</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h3>Welcome back!</h3>
+    <form action="#">
+      <label for="username">Username:</label>
+      <input id="username" type="text" required />
+      <label for="username">Password:</label>
+      <input id="password" type="password" required />
+      <p class="message"></p>
+      <input id="submit" type="submit" value="Let's go!" />
+    </form>
+
+    <p class="dont-have-account">Do not have an account?</p>
+    <a class="signup" href="./resigtration.html">Sign up!</a>
+  </main>
+  <footer>
+    <div>
+      <p id="copyrigts">
+        <span id="current-year"></span> © Visos teisės saugomos
+      </p>
+    </div>
+    <div>
+      <p class="names">Karina Garifovaitė, Erika Butrimanskienė, Evelina Poniatajeva </p>
+    </div>
+  </footer>
+</body>
+
+</html>
